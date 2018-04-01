@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="main.js"></script>
+</head>
+<style>
+    #mainContainer {
+        width: 80%;
+        height: 80%;
+        display: block;
+        margin: auto;
+        margin-top: 80px;
+        margin-bottom: 10%;
+    }
+
+    body {
+        background-color: black;
+        color: white;
+    }
+
+    #titleText {
+        width: 300px;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        animation-name: titleColor;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+    }
+
+    h1 {
+        font-size: 42px;
+        position: relative;
+        top: -75px;
+        left: -120px;
+    }
+
+    @keyframes titleColor {
+        from {
+            color: red;
+        }
+        to {
+            color: blue;
+        }
+    }
+
+    #myBox1 {
+        height: 100px;
+        width: 100px;
+        position: absolute;
+        top: 10%;
+        left: 10%;
+        background-color: red;
+        animation-name: moveBox1;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+    }
+
+    @keyframes moveBox1 {
+        0% {
+            background-color: red;
+            left: 10%;
+            top: 10%;
+        }
+        25% {
+            background-color: yellow;
+            top: 10%;
+            left: 80%;
+        }
+        50% {
+            background-color: blue;
+            top: 80%;
+            left: 80%;
+        }
+        75% {
+            background-color: green;
+            left: 10%;
+            top: 80%;
+        }
+        100% {
+            background-color: red;
+            left: 10%;
+            top: 10%;
+        }
+    }
+
+    #myBox2 {
+        height: 100px;
+        width: 100px;
+        position: absolute;
+        top: 80%;
+        left: 80%;
+        background-color: red;
+        animation-name: moveBox2;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+    }
+
+    @keyframes moveBox2 {
+        0% {
+            background-color: red;
+            left: 80%;
+            top: 80%;
+        }
+        25% {
+            background-color: yellow;
+            left: 10%;
+            top: 80%;
+        }
+        50% {
+            background-color: blue;
+            left: 10%;
+            top: 10%;
+        }
+        75% {
+            background-color: green;
+            left: 80%;
+            top: 10%;
+        }
+        100% {
+            background-color: red;
+            left: 80%;
+            top: 80%;
+        }
+    }
+</style>
+
+<body>
+    <div id="mainContainer">
+        <div id="myBox1"></div>
+        <div id="myBox2"></div>
+        <div id="titleText">
+            <h1>Dance Party</h1>
+        </div>
+    </div>
+</body>
+
+</html>
